@@ -1,16 +1,15 @@
 <template>
   <div class="box">
-    <p>Name: {{ name }}</p>
-    <p>Review: {{ review }}</p>
+    <p>{{ name }}</p>
   </div>
 </template>
 
 <script>
 export default {
-  name: "Box",
+  name: "CostumeBox",
   props: {
     name: String,
-    review: Number,
+    description: String,
   },
 };
 </script>
@@ -19,5 +18,10 @@ export default {
 .box {
   background-color: #272533;
   color: #ff9136;
+  width: 99%;
+  border: 1px solid #ff9136;
+  padding-left: 10px;
+  margin: 5px;
+  font-weight: bold;
 }
 </style>

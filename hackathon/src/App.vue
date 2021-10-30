@@ -1,9 +1,17 @@
 <template>
   <div>
-    <h1> halloween costume recommender </h1>
+    <h1>HALLOWEEN COSTUME RECOMMENDER</h1>
     <InputBox />
-    <CostumeBox name="baf" :review="42" />
-    <CostumeBox name="hi" :review="96" />
+    <br /><br /><br />
+    <CostumeBox
+      name="baf"
+      description="bafism is baf indeed poggers not poggers"
+    />
+    <CostumeBox name="hi" description="hello" />
+    <CostumeBox name="hi" description="hello" />
+    <CostumeBox name="hi" description="hello" />
+    <CostumeBox name="hi" description="hello" />
+    <CostumeBox name="hi" description="hello" />
   </div>
 </template>
 
@@ -22,14 +30,13 @@ export default {
 <style>
 @font-face {
   font-family: "Halloween Morning";
-  src: local("Halloween Morning"), 
-  url(./fonts/Halloween-Morning.ttf);
+  src: local("Halloween Morning"), url(./fonts/Halloween-Morning.ttf);
 }
 html {
   background-color: #16151d;
 }
 h1 {
-  color: #A21622;
+  color: #a21622;
   background-color: #ff711f;
   text-align: center;
   padding: 20px;
