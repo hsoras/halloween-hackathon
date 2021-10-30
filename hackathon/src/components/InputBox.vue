@@ -7,26 +7,41 @@
           type="text"
           id="input"
           v-model="inputText"
-          placeholder="Put comma-separated adjectives Ex: blue, scary"
+          placeholder="Put comma-separated adjectives Ex: blue scary"
         />
         <button id="button" type="submit">Enter</button>
       </form>
+      <br /><br /><br />
+      <!-- eslint-disable-next-line -->
+      <div v-for="result in results">
+        <div class="box">
+          <p>{{ result }}</p>
+        </div>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
+import search from "../data/search";
+import data from "../data/data.json";
+// import CostumeBox from "./CostumeBox.vue";
+
 export default {
   name: "InputBox",
+  components: {
+    // CostumeBox,
+  },
   data() {
     return {
       inputText: "",
+      results: [],
     };
   },
   methods: {
     submitHandler(e) {
       e.preventDefault();
-      console.log(this.inputText);
+      this.results = search(this.inputText, data);
     },
   },
 };
@@ -76,5 +91,14 @@ html {
   background-color: #ff711f;
   color: white;
   cursor: pointer;
+}
+.box {
+  background-color: #272533;
+  color: #ff9136;
+  width: 99%;
+  border: 1px solid #ff9136;
+  padding-left: 10px;
+  margin: 5px;
+  font-weight: bold;
 }
 </style>

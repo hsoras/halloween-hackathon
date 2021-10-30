@@ -2,27 +2,15 @@
   <div>
     <h1>HALLOWEEN COSTUME RECOMMENDER</h1>
     <InputBox />
-    <br /><br /><br />
-    <CostumeBox
-      name="baf"
-      description="bafism is baf indeed poggers not poggers"
-    />
-    <CostumeBox name="hi" description="hello" />
-    <CostumeBox name="hi" description="hello" />
-    <CostumeBox name="hi" description="hello" />
-    <CostumeBox name="hi" description="hello" />
-    <CostumeBox name="hi" description="hello" />
   </div>
 </template>
 
 <script>
-import CostumeBox from "./components/CostumeBox";
 import InputBox from "./components/InputBox";
 
 export default {
   name: "App",
   components: {
-    CostumeBox,
     InputBox,
   },
 };
