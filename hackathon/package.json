@@ -11,8 +11,11 @@
     "core-js": "^3.6.5",
     "csvtojson": "^2.0.10",
     "flexsearch": "^0.7.21",
+    "keyword-extractor": "^0.0.20",
     "natural": "^5.1.1",
-    "vue": "^3.0.0"
+    "thesaurus": "^0.0.1",
+    "vue": "^3.0.0",
+    "wink-lemmatizer": "^3.0.2"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
