@@ -25,7 +25,9 @@
 <script>
 //import search from "../data/search";
 //import data from "../data/data.json";
-import search_tfidf from "../data/trialsearch"
+//import search_tfidf from "../data/trialsearch"
+import KeywordSearch from "../data/keywordsearch"
+//import RelatabilityCompare from "../data/relatabilitycompare"
 // import CostumeBox from "./CostumeBox.vue";
 
 export default {
@@ -42,7 +44,7 @@ export default {
   methods: {
     submitHandler(e) {
       e.preventDefault();
-      this.results = search_tfidf(this.inputText);
+      this.results = KeywordSearch.searchKeyword(this.inputText);
     },
   },
 };
