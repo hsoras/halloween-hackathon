@@ -7,7 +7,7 @@
           type="text"
           id="input"
           v-model="inputText"
-          placeholder="Put comma-separated adjectives Ex: blue scary"
+          placeholder="Put space-separated adjectives Ex: blue scary"
         />
         <button id="button" type="submit">Enter</button>
       </form>
@@ -23,8 +23,9 @@
 </template>
 
 <script>
-import search from "../data/search";
-import data from "../data/data.json";
+//import search from "../data/search";
+//import data from "../data/data.json";
+import search_tfidf from "../data/trialsearch"
 // import CostumeBox from "./CostumeBox.vue";
 
 export default {
@@ -41,7 +42,7 @@ export default {
   methods: {
     submitHandler(e) {
       e.preventDefault();
-      this.results = search(this.inputText, data);
+      this.results = search_tfidf(this.inputText);
     },
   },
 };
