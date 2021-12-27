@@ -1,6 +1,6 @@
 {
   "name": "hackathon",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -11,11 +11,8 @@
     "core-js": "^3.6.5",
     "csvtojson": "^2.0.10",
     "flexsearch": "^0.7.21",
-    "keyword-extractor": "^0.0.20",
     "natural": "^5.1.1",
-    "thesaurus": "^0.0.1",
-    "vue": "^3.0.0",
-    "wink-lemmatizer": "^3.0.2"
+    "vue": "^3.0.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
